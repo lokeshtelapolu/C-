@@ -1,0 +1,784 @@
+Basic c programs
+1.	Average
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a,b,c,n;
+  cout<<"enter a value a,b,c\n";
+  cin>>a>>b>>c;
+  n=(a+b+c)/3;
+  cout<<n;
+  return 0;
+}
+2.arithmatic
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a,b,c,d,e,f;
+  float g;
+  cout<<"enter a,b,c value\n";
+  cin>>a>>b>>c;
+  d=a+b+c;
+  e=a-b-c;
+  f=a*b*c;
+  g=(c/(b/a));
+  cout<<d<<"\n";
+  cout<<e<<"\n";
+  cout<<f<<"\n";
+  cout<<g<<"\n";
+  return 0;
+}
+3.Vowel-cons
+#include<iostream>
+using namespace std;
+int main()
+{
+  char ch;
+  cout<<"enter a character\n";
+  cin>>ch;
+  if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+  {
+    cout<<"the character is a vowel";
+  }
+  else
+  {
+    cout<<"the character is a consonent";
+  }
+  return 0;
+}
+
+Greater among three integer
+#include<stdio.h>
+int main()
+{
+//Fill the code
+int num1, num2, num3;
+scanf(“%d %d %d”,&num1,&num2,&num3);
+if(num1 > num2 && num1 > num3)
+{ 
+printf(“%d is greater”,num1);
+}
+else if(num2 > num1 && num2 > num3)
+{
+printf(“%d is greater”,num2);
+}
+else
+{
+printf(“%d is greater”,num3);
+}
+return 0;
+}
+
+
+Nearest
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+  int b,c;
+  float a;
+  cout<<"enter a float value\n";
+  cin>>a;
+  b=round(a);
+  c=floor(a);
+  cout<<b<<"\n";
+  cout<<c;
+}
+Swap of two numbers
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a,b,c;
+  cout<<"enter a number\n";
+  cin>>a>>b;
+  c=a;
+  a=b;
+  b=c;
+  cout<<a<<"\n"<<b<<"\n";
+}
+Max terinary operator
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a,b,c;
+  cout<<"Enter a number: ";
+  cin>>a;
+  cout<<"\nEnter a number: ";
+  cin>>b;
+  cout<<"\nEnter a number: ";
+  cin>>c;
+  bool d=(a>b && a>c)? true:false;
+  if(d)
+  {
+    cout<<"\na is greatest";
+  }
+  else
+  {
+    bool e=(b>c)? true:false;
+    if(e)
+    {
+      cout<<"\nb is greatest";
+    }
+    else
+    {
+      cout<<"\nc is greatest";
+    }
+  }
+}
+
+Equal terinary
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a,b;
+  cout<<"enter a values\n";
+  cin>>a>>b;
+  bool c=(a==b)?true:false;
+  if(c)
+  {
+    cout<<"equal";
+  }
+  else
+  {
+    cout<<"not equal";
+  }
+}
+Divisible by 3 using terinary operator
+#include <iostream>
+using namespace std;
+int main() {
+  int number;
+  cout<<"enter a value";
+  cin>>number;
+  bool d=(number % 2 == 0) ?true:false;
+  if(d)
+  {
+      cout<<"Even Number";
+   }
+   else
+   {
+       cout<<"Odd Number";
+   }
+  return 0;
+}
+Factorial
+#include<iostream>
+using namespace std;
+int main()
+{
+  int n,f=1,i;
+  cout<<"enter value\n";
+  cin>>n;
+  for(i=1;i<=n;i++)
+  {
+    f=f*i;
+  }
+    cout<<f;
+}
+Fibonacci
+#include<iostream>
+using namespace std;
+int main()
+{
+  int n,a=0,b=1,c,t;
+  cout<<"enter a values\n";
+  cin>>n;
+  cout<<a<<"\n"<<b<<"\n";
+  t=3;
+  while(t<=n)
+  {
+    c=a+b;
+    cout<<c<<"\n";
+    a=b;
+    b=c;
+    t++;
+  } 
+}
+Multliplication
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout << "Enter a positive integer: ";
+    cin >> n;
+
+    // run a loop from 1 to 10
+    // print the multiplication table
+    for (int i = 1; i <= 10; ++i) {
+        cout << n << " * " << i << " = " << n * i << endl;
+    }
+    
+    return 0;
+}
+Prime
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a,i,n,flag=0;
+
+  cout<<"ENTER A NUMBERS : ";
+
+  cin>>a;
+
+  n=a/2;
+
+  for(i=2;i<=n;i++)
+
+  {
+
+    if(a%i==0)
+
+    {
+
+      flag=1;
+
+      cout<<"\nGIVEN NUMBER IS NOT PRIME";
+
+      break;
+
+    }
+
+  }
+
+  if(flag==0)
+
+  {
+
+    cout<<"\nGIVEN NUMBER IS PRIME";
+
+  }
+
+}
+Palindrome
+#include<iostream>
+using namespace std;
+int main()
+{
+  int n,d,r=0,a;
+  cout<<"enter value\n";
+  cin>>a;
+  n=a;
+  while(n!=0)
+  {
+    d=n%10;
+    r=(r*10)+d;
+    n=n/10;
+  }
+  if(a==r)
+  {
+    cout<<"palindrome";
+  }
+  else
+  {
+    cout<<"not a palindrome";
+  }
+}
+Sum of all
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,n,rem,rev=0;
+  cout<<"Enter a number : ";
+  cin>>a;
+  n=a;
+  while(n!=0)
+  {
+    rem=n%10;
+    rev+=rem;
+    n=n/10;
+  }
+  cout<<"\nSum of all Digits : "<<rev;
+  return 0;
+}
+
+Gcd
+#include<iostream>
+using namespace std;
+int main();
+{
+  int a,b,r;
+  cout<<"enter value";
+  cin>>a>>b;
+  while(b!=0)
+  {
+    r=a%b;
+    a=b;
+    b=r;
+  }
+  cout<<a;
+}
+
+Perfect
+#include<iostream>
+using namespace std;
+int main()
+{
+  int n,i,s=0;
+  cout<<"enter a value\n";
+  cin>>n;
+  for(i=1;i<n;i++)
+  {
+    if(n%i==0)
+    {
+      s=s+i;
+    }
+  }
+  if(s==n)
+  {
+    cout<<"perfect no";
+  }
+  else
+  {
+    cout<<"not perfect no";
+  }
+}
+Harshad 
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a,n,r,rev=0,d;
+  cout<<"enter a value\n";
+  cin>>a;
+  n=a;
+  while(n!=0)
+  {
+    r=n%10;
+    rev=rev+r;
+    n=n/10;
+  }
+  if(a%rev==0)
+  {
+    cout<<"harshed no";
+  }
+  else
+  {
+    cout<<"not harshed no";
+  }
+}
+
+Happy no
+#include<iostream>
+using namespace std;
+
+int SumOfSquNum(int givno)
+
+{
+
+    int SumOfSqr = 0;
+
+    while (givno)
+
+    {
+
+        SumOfSqr += (givno % 10) * (givno % 10);
+
+        givno /= 10;
+
+    }
+
+    return SumOfSqr;
+
+}
+
+bool checkHappy(int chkhn)
+
+{
+
+    int slno, fstno;
+
+    slno = fstno = chkhn;
+
+    do
+
+    {
+
+        slno = SumOfSquNum(slno);
+
+        fstno = SumOfSquNum(SumOfSquNum(fstno));
+
+    }
+
+    while (slno != fstno);
+
+    return (slno == 1);
+
+}
+
+int main()
+
+{
+
+ int hyno;
+
+ cout << " Input a number: ";
+
+ cin >> hyno;
+
+    if (checkHappy(hyno))
+
+        cout<<"\n"<<hyno<< " is a Happy number\n";
+
+    else
+
+        cout<<"\n"<<hyno<< " is not a Happy number\n";
+
+}
+Strong
+#include<iostream>
+using namespace std;
+int main()
+{
+
+  int sum=0,n,f,a,rem=0,i;
+
+  cout<<"ENTER THE NUMBER : ";
+
+  cin>>a;
+
+  n=a;
+
+  while(n!=0)
+
+  {
+
+    rem=n%10;
+
+    f=1;
+
+    for(i=1;i<=rem;i++)
+
+  	{      f=f*i;
+
+    }
+
+    n=n/10;
+
+    sum+=f;
+
+  }
+
+  if(sum==a)
+
+  {
+
+    cout<<"\nIT IS A STRONG NUMBER ";
+
+  }
+
+  else
+
+  {
+
+    cout<<"\nIT IS NOT A STRONG NUMBER ";
+
+  }
+
+}
+buzz
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a,rem=0,n;
+  cout<<"ENTER A NUMBER : ";
+  cin>>a;
+  n=a;
+  rem=n%10;
+
+  if(a%7==0 || rem==7)
+  {
+    cout<<"\nIT IS A BUZZ NUMBER ";
+  }
+  else
+  {
+    cout<<"\nIT IS A NOT BUZZ NUMBER ";
+  }
+}
+Neon 
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a,n,sqr,s=0,r;
+  cout<<"enter value\n";
+  cin>>a;
+  sqr=a*a;
+  n=sqr;
+  while(n!=0)
+  {
+    r=n%10;
+    s=s+r;
+    n=n/10;
+  }
+  if(a==s)
+  {
+    cout<<"neon no";
+  }
+  else
+  {
+    cout<<"not neon no";
+  }
+}
+
+Abundant 
+#include<iostream>
+using namespace std;
+int main()
+{
+  int sum=0,n,i;
+  cout<<"ENTER THE NUMBER : ";
+  cin>>n;  
+  for(i=1;i<n;i++)
+  {
+    if(n%i==0)
+    {
+      sum+=i;     
+    }
+  }
+  if(sum>n)
+    cout<<"\nABUNDANT NUMBER";
+
+  else
+    cout<<"\nNOT A ABUNDANT NUMBER";
+
+  return 0;
+}
+Narasstic
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+  int num,y,x,rem,n=0,result=0,power;
+  cout<<"ENTER INTEGER : ";
+  cin>>num;
+
+  x=num;
+
+  while(x!=0) 
+  {
+    x/=10;
+    ++n;
+  }
+  y=num;
+  while(y!=0) 
+  {
+    rem=y%10;
+    power=round(pow(rem, n));
+    result+=power;
+    y/=10;
+  }
+  if(result==num)
+  {
+    cout<<"\nGIVEN NUMBER IS A NARCISSISTIC NUMBER ";
+  }
+  else
+  {
+    cout<<"\nGIVEN NUMBER IS NOT A NARCISSISTIC NUMBER ";
+  }
+}
+
+Rtp pattern number
+#include<iostream>
+using namespace std;
+int main()
+{
+  int n,i,j;
+  cout<<"enter a rows\n";
+  cin>>n;
+  for(i=1;i<=n;i++)
+  {
+    for(j=i;j>=1;j--)
+    {
+      cout<<" "<<i;
+    }
+    cout<<"\n";
+  }
+}
+Rtp pattern star
+#include<iostream>
+using namespace std;
+int main()
+{
+  int n,i,j;
+  cout<<"enter a value\n";
+  cin>>n;
+  for(i=1;i<=n;i++)
+  {
+    for(j=i;j>=1;j--)
+    {
+      cout<<" *";
+    }
+    cout<<"\n";
+  }
+}
+
+
+Pyramid no
+#include<iostream>
+using namespace std;
+int main()
+{
+  int i,j,a;
+  cout<<"ENTER THE NUMBER : ";
+  cin>>a;
+  for(i=0;i<=a;i++)
+  {
+    for(j=0;j<i;j++)
+    {
+      cout<<" "<<i;
+    }
+    cout<<"\n";
+  }
+}
+Reverse
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a,n,rem,rev=0;
+  cout<<"ENTER THE NUMBER :";
+  cin>>a;
+  n=a;
+  while(n!=0)
+  {
+    rem=n%10;
+    rev=rev*10+rem;
+    n=n/10;
+  }
+  cout<<"\nREVERSED NUMBER IS : "<<rev;
+}
+Occurances
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a[100],n,i,c,d=0;
+  cout<<"enter value\n";
+  cin>>n;
+  cout<<"enter no\n";
+  for(i=0;i<n;i++)
+  {
+    cin>>a[i];
+  }
+  cout<<"search no\n";
+  cin>>c;
+  for(i=0;i<n;i++)
+  {
+    if(c==a[i])
+    {
+      d=d+1;
+    }
+  }
+  cout<<d;
+}
+
+Diagonal of matrices
+               #include<iostream>
+               using namespace std;
+              int main()
+           { 
+	   int a[2][2]={{1,2},{3,4}};
+	   int i,j,sum=0;
+	    for(i=0;i<2;i++)
+	    {
+		for(j=0;j<2;j++)
+		{
+			sum=a[0][0]+a[1][1];	
+		}
+  	}
+	cout<<sum;
+         }
+Add two matrix
+          #include<iostream>
+           using namespace std;
+          int main()
+          {
+	int a[2][2]={{1,2},{3,4}};
+	int b[2][2]={{1,1},{1,1}};
+	int i,j,c[2][2];
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			c[i][j]=a[i][j]+b[i][j];
+		}
+	}
+	 for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			cout<<c[i][j]<<"\t";
+		}
+		cout<<"\n";
+	}
+     }
+Diamond pattern
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n,i,j;
+	cout<<"enter number\n";
+	cin>>n;
+	
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<n-i;j++)
+		{
+			cout<<" ";
+		}
+		for(j=0;j<i;j++)
+		{
+			cout<<" *";
+		}
+		cout<<endl;
+	}
+	
+	for(i=n;i>=0;i--)
+	{
+		for(j=0;j<n-i;j++)
+		{
+			cout<<" ";
+		}
+		for(j=0;j<i;j++)
+		{
+			cout<<" *";
+		}
+		cout<<endl;
+	}
+}
+Pascal triangle
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i,j,k,l,n;
+	cin>>n;
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=n-i;j++)
+		{
+			cout<<" ";
+		}
+		for(k=1;k<=i;k++)
+		{
+			cout<<k;
+		}
+		for(l=i-1;l>=1;l--)
+		{
+			cout<<l;
+		}
+		
+		cout<<"\n";
+	}
+}
